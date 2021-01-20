@@ -144,12 +144,89 @@
                     </div>
                 </div>
                 <h3>폼 요소</h3>
-                <div class="border">
-                    <div id=form>콘텐츠 영역</div>
+                <div class="border" id="form">
+                    <div class="text_h4">
+                        <h4>회원가입</h4>
+                        <div class="form_border">
+                            <h4><label for="id">아이디</label></h4>
+                            <input class="text" type="text" id="id">
+                            <h4><label for="pw">비밀번호</label></h4>
+                            <input class="text" type="text" id="pw">
+                            <h4><label for="name">이름</label></h4>
+                            <input class="text" type="text" id="name">
+                            <label>
+                                <h4>생년월일</h4>
+                                <select>
+                                    <option>년도</option>
+                                    <option>2002</option>
+                                    <option>2001</option>
+                                    <option>2000</option>
+                                    <option>1999</option>
+                                    <option>1998</option>
+                                    <option>1997</option>
+                                    <option>1996</option>
+                                </select>
+                                <select>
+                                    <option>월</option>
+                                    <option>12</option>
+                                    <option>11</option>
+                                    <option>10</option>
+                                    <option>9</option>
+                                    <option>8</option>
+                                    <option>7</option>
+                                    <option>6</option>
+                                    <option>5</option>
+                                    <option>4</option>
+                                    <option>3</option>
+                                    <option>2</option>
+                                    <option>1</option>
+                                </select>
+                                <select>
+                                    <option>일</option>
+                                    <option>30</option>
+                                    <option>15</option>
+                                    <option>9</option>
+                                    <option>1</option>
+                                </select>
+                            </label>
+                            <h4>성별</h4>
+                            <input type="radio" name="gender" id="male"><label for="male">남자</label>
+                            <input type="radio" name="gender" id="female"><label for="female">여자</label>
+                            <label>
+                                <h4>이메일</h4>
+                                <input type="text" placeholder="이메일 주소에 '@'를 포함해주세요.">
+                            </label>
+                            <label>
+                                <h4>휴대전화</h4>
+                                <span class="number">
+                                    <input type="text" placeholder="숫자만 입력해주세요.">
+                                    <button type="button" class="code">인증번호 받기</button>
+                                </span>
+                                <input type="text" placeholder="인증번호를 입력해주세요.">
+                            </label>
+                            <h4>취미</h4>
+                            <span class="hobby">
+                                <input type="checkbox" name="hobby" id="exercise"><label for="exercise">운동</label>
+                                <input type="checkbox" name="hobby" id="cook"><label for="cook">요리</label>
+                                <input type="checkbox" name="hobby" id="trip"><label for="trip">여행</label>
+                                <input type="checkbox" name="hobby" id="game"><label for="game">게임</label>
+                                <input type="checkbox" name="hobby" id="computer"><label for="computer">컴퓨터</label>
+                                <input type="checkbox" name="hobby" id="music"><label for="music">음악</label>
+                                <input type="checkbox" name="hobby" id="movie"><label for="movie">영화</label>
+                                <input type="checkbox" name="hobby" id="reading"><label for="reading">독서</label>
+                            </span>
+                            <label>
+                                <h4>가입하기</h4>
+                                <textarea rows="7" cols="122"></textarea>
+                                <button type="button">가입하기</button>
+                            </label>
+                        </div>
+                    </div>
                 </div>
                 <h3>리스트 요소</h3>
                 <div class="border">
                     <div id=list>콘텐츠 영역</div>
+                
                 </div>
             </article>
 

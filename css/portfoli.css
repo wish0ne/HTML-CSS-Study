@@ -116,12 +116,6 @@ article > .border{
 .table1 table, tr{
     width:100%;
     height:28px;
-    /*왜 thead는 안늘어나고 tbody만 늘어나지?
-    .table table에만 height 28px을 줬을때도 변화없음
-    height가 200px일때만 tbody만 늘어남
-    그냥 tbody, thead에 스타일 적용하는건 잘 안되고
-    tr에 적용하는걸 습관으로 하는게 편할듯
-    */
 }
 
 .table1 caption, .table2 caption{
@@ -145,8 +139,7 @@ article > .border{
 .table2 th{
     border-top: 2px solid #a5a5a5;
     border-bottom: 1px solid #e4e4e4;
-    /*thead에 border 설정하면 안나온다*/
-    /*따라서 table, th, td이용하고 끊어지게 나오는거는 border-collapse활용*/
+   
 }
 
 .table2 .foot{
@@ -159,9 +152,6 @@ article > .border{
 .table2 .price{
     padding-right:70px;
     text-align: right;
-    /*아니 우측정렬 어케하라고... 끝으로 가는데...
-    padding줘서 해결
-    근데 tfoot은 또 적용이 안되네 ^^*/
 }
 
 .table2 .content{
@@ -170,6 +160,120 @@ article > .border{
 
 .division, th{
     font-weight:bold;
+}
+
+.text_h4 h4{
+    font-size:14px;
+    color:#000;
+    font-weight:bold;
+    margin-top:0px;
+    margin-bottom:10px;
+}
+
+.form_border{
+    border:1px solid #e4e4e4;
+    background-color: #fbfbfb;
+    /* width:896px; */
+    padding :20px;
+}
+
+.form_border .text{
+    width:100%;
+    height:30px;
+    border:1px solid #e4e4e4;
+    margin-bottom:15px;
+    font-size:12px;
+    color:#000;
+    box-sizing: border-box;
+  
+}
+
+.form_border select{
+    width:295.5px;
+    height:30px;
+    border: 1px solid #e4e4e4;
+    font-size:12px;
+    color:#000;
+    margin-bottom:15px;
+}
+
+.form_border input[type="radio"]+label{
+    font-size:12px;
+    color:#000;
+    display:inline-block;
+    margin-right:60px;
+    vertical-align: text-top; /*글자를 radiobutton에 맞추기 위해서 */
+    margin-bottom:15px;
+}
+
+/*인접형제 선택자랑 속성선택자 더 써보기*/
+
+.form_border input[placeholder="이메일 주소에 '@'를 포함해주세요."]{
+    width:100%;
+    height:30px;
+    border:1px solid #e4e4e4;
+    margin-bottom: 15px;
+    box-sizing: border-box; /*border-box*/
+}
+
+.form_border input[placeholder="숫자만 입력해주세요."]{
+    display:inline-block;
+    border:1px solid #e4e4e4;
+    height:30px;
+    width:75%;
+    margin-bottom: 5px;
+    margin-right:5px;
+    box-sizing: border-box;
+}
+
+.form_border .code{
+    display: inline-block;
+    border:1px solid #08a600;
+    background-color: #4ec56d;
+    font-size:12px;
+    color:#fff;
+    height:32px;
+    width:23.8%;
+    cursor: pointer;
+
+}
+
+.form_border input[placeholder="인증번호를 입력해주세요."]{
+    display:block;
+    width:100%;
+    border:1px solid #e4e4e4;
+    height:30px;
+    margin-bottom:15px;
+    box-sizing: border-box;
+}
+
+.form_border input[name="hobby"] +label{
+    font-size:12px;
+    color:#000;
+    vertical-align: text-top;
+    padding-left:3px;
+    margin-right:60px;
+}
+
+.form_border .hobby{
+    margin-bottom:15px;
+    display: inline-block;
+}
+
+.form_border textarea{
+    border:1px solid #e4e4e4;
+    box-sizing: border-box;
+}
+
+.form_border textarea+button{
+    background-color: #4ec53d;
+    border:1px solid #08a600;
+    font-size:16px;
+    color:#fff;
+    width:100%;
+    height:40px;
+    margin-top:10px;
+    cursor:pointer;
 }
 
 footer{
