@@ -173,7 +173,6 @@ article > .border{
 .form_border{
     border:1px solid #e4e4e4;
     background-color: #fbfbfb;
-    /* width:896px; */
     padding :20px;
 }
 
@@ -274,6 +273,218 @@ article > .border{
     height:40px;
     margin-top:10px;
     cursor:pointer;
+}
+
+.list  h4{
+    font-size:14px;
+    color:#000;
+    font-weight: bold;
+}
+
+.project_content{
+    border:1px solid #e4e4e4;
+    width:100%;
+    padding:20px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+.project_content > h5{
+    font-size:32px;
+    font-weight: bold;
+    color:#000;
+    text-align: center;
+    margin:20px;
+
+}
+
+.project_content > strong{
+    font-size:14px;
+    font-weight: bold;
+    color:#000;
+}
+
+.project_content > span{
+    font-size:12px;
+    color:#559bfa;
+}
+
+.project_content > p{
+    font-size:12px;
+    color:#000;
+    margin-bottom:20px;
+    margin-top:6px;
+}
+
+.ranking{
+    border:1px solid #e4e4e4;
+    width:200px;
+    padding:15px;
+    margin-bottom:50px;
+}
+
+.ranking .number{
+    display:inline-block;
+    font-size:10px;
+    color:#666;
+    border:1px solid #e0e0e0;
+    width:15px;
+    height:15px;
+    text-align: center;
+    margin-right:5px;
+    margin-bottom:5px;
+
+}
+
+.ranking .text{
+    font-size:12px;
+    color:#000;
+    vertical-align: text-bottom;
+}
+
+.ranking a{
+    text-decoration: none;
+    color:#000;
+}
+
+.ranking a:hover{
+    text-decoration: underline;
+}
+
+.cookie{
+    border:1px solid #e4e4e4;
+    padding: 20px 40px;
+    margin-bottom:50px;
+}
+
+.cookie li{
+    margin-bottom:10px;
+}
+
+.cookie strong{
+    font-size:12px;
+    font-weight: bold;
+    color:#000;
+    /*li의 marker size는 font-size에 따라가는듯. 그니까 li태그까지 포함해서 font-size 지정해야함*/
+}
+
+.cookie strong span{
+    color:#559bfa;
+}
+
+.cookie .text{
+    font-size:12px;
+    color:#000;
+}
+
+.cookie .text>.red{
+    color:#ec5336;
+}
+
+.cookie .text>a{
+    color:#559bfa;
+
+}
+
+.cookie .text br+a{
+    display: inline-block;
+    margin-top:5px;
+}
+
+.news{
+    border:1px solid #e4e4e4;
+    margin-bottom: 50px;
+}
+
+.news ul{
+    padding: 10px 20px;
+}
+
+.news li{
+    list-style: none;
+}
+
+.news img{
+    margin-right:10px;
+    float:left;
+}
+
+.news li[class="border"]{
+    padding-bottom:15px;
+    border-bottom:1px solid #e4e4e4;
+    margin-bottom:20px;
+}
+
+.news strong{
+    font-size:14px;
+    color:#00c;
+}
+
+.news p{
+    font-size:12px;
+    color:#000;
+}
+
+.webtoon{
+    border:1px solid #e4e4e4;
+    padding:20px 1px 20px 20px;
+}
+.webtoon img{
+    margin-right:20px;
+    display: inline-block;
+}
+
+.webtoon strong{
+    font-size:14px;
+    color:#000;
+    font-weight: bold;
+}
+
+.webtoon .no_box{
+    display: inline-block;
+    width:285px;
+    margin: 0 20px 0 0;
+}
+
+.webtoon .group{
+    display: inline-block;
+    width:285px;
+    margin-right:20px;
+}
+
+.webtoon .group .green_box{
+    display: inline-block;
+    border:1px solid #71b036;
+    background-color: #80c83d;
+    font-size:10px;
+    color:#fff;
+    width: 25px;
+    text-align: center;
+    margin-right:5px;
+}
+.webtoon .title span{
+    display: inline-block;
+    width:285px;
+    margin-right:20px;
+    font-size:12px;
+    color:#000;
+    margin-bottom: 15px;
+
+}
+
+.webtoon .group .red_box{
+    display: inline-block;
+    border:1px solid #df4e28;
+    background-color: #ec5336;
+    font-size:10px;
+    color:#fff;
+    width: 45px;
+    text-align: center;
+    margin-right:5px;
+}
+
+.webtoon a:hover{
+    text-decoration: underline;
 }
 
 footer{
