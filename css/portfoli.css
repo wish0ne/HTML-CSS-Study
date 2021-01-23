@@ -162,7 +162,8 @@ article > .border{
     font-weight:bold;
 }
 
-.text_h4 h4{
+.text_h4 span{
+    display:inline-block;
     font-size:14px;
     color:#000;
     font-weight:bold;
@@ -178,7 +179,7 @@ article > .border{
 
 .form_border .text{
     width:100%;
-    height:30px;
+    height:35px;
     border:1px solid #e4e4e4;
     margin-bottom:15px;
     font-size:12px;
@@ -189,7 +190,7 @@ article > .border{
 
 .form_border select{
     width:295.5px;
-    height:30px;
+    height:35px;
     border: 1px solid #e4e4e4;
     font-size:12px;
     color:#000;
@@ -201,28 +202,43 @@ article > .border{
     color:#000;
     display:inline-block;
     margin-right:60px;
-    vertical-align: text-top; /*글자를 radiobutton에 맞추기 위해서 */
+    vertical-align: text-top;
     margin-bottom:15px;
 }
 
-/*인접형제 선택자랑 속성선택자 더 써보기*/
 
 .form_border input[placeholder="이메일 주소에 '@'를 포함해주세요."]{
     width:100%;
-    height:30px;
+    height:35px;
     border:1px solid #e4e4e4;
     margin-bottom: 15px;
-    box-sizing: border-box; /*border-box*/
+    box-sizing: border-box;
+    padding: 2px 4px;
+}
+
+.form_border .cell_phone{
+    width:100%;
+    box-sizing: border-box;
+    font-size:0;
+    margin-bottom:5px;
+    height:35px;
+}
+
+.form_border .number{
+    width:25%;
+    box-sizing: border-box;
+    text-align: right; /*.code 오른쪽 정렬*/
+
 }
 
 .form_border input[placeholder="숫자만 입력해주세요."]{
     display:inline-block;
     border:1px solid #e4e4e4;
-    height:30px;
+    height:35px;
     width:75%;
-    margin-bottom: 5px;
-    margin-right:5px;
+    padding:2px 4px;
     box-sizing: border-box;
+    
 }
 
 .form_border .code{
@@ -231,8 +247,8 @@ article > .border{
     background-color: #4ec56d;
     font-size:12px;
     color:#fff;
-    height:32px;
-    width:23.8%;
+    height:35px;
+    width:95%;
     cursor: pointer;
 
 }
@@ -241,8 +257,9 @@ article > .border{
     display:block;
     width:100%;
     border:1px solid #e4e4e4;
-    height:30px;
+    height:35px;
     margin-bottom:15px;
+    padding: 2px 4px;
     box-sizing: border-box;
 }
 
@@ -264,7 +281,7 @@ article > .border{
     box-sizing: border-box;
 }
 
-.form_border textarea+button{
+.form_border button.join{
     background-color: #4ec53d;
     border:1px solid #08a600;
     font-size:16px;
@@ -361,14 +378,13 @@ article > .border{
     margin-bottom:10px;
 }
 
-.cookie strong{
+.cookie .strong{
     font-size:12px;
     font-weight: bold;
     color:#000;
-    /*li의 marker size는 font-size에 따라가는듯. 그니까 li태그까지 포함해서 font-size 지정해야함*/
 }
 
-.cookie strong span{
+.cookie .strong span{
     color:#559bfa;
 }
 
@@ -428,10 +444,10 @@ article > .border{
 .webtoon{
     border:1px solid #e4e4e4;
     padding:20px 1px 20px 20px;
-    font-size:0; /*인라인 요소 공백 제거*/
+    font-size:0;
 }
 
-.webtoon figure{
+.webtoon span{
     display: inline-block;
     margin: 0 20px 15px 0;
     width:285px;
@@ -441,9 +457,9 @@ article > .border{
     margin-bottom:5px;
 }
 
-.webtoon figcaption{
+/* .webtoon span{
     display: inline-block;
-}
+} */
 
 .webtoon .title{
     display:inline-block;
@@ -451,6 +467,7 @@ article > .border{
     font-weight: bold;
     color:#000;
     margin-bottom: 3px;
+    width:50%;
 }
 
 .webtoon .subtitle{
@@ -464,6 +481,7 @@ article > .border{
     background-color: #80c83d;
     border:1px solid #71b036;
     margin-right:3px;
+    margin-bottom: 0;
     width:25px;
     text-align: center;
 }
@@ -474,11 +492,12 @@ article > .border{
     background-color: #ec5336;
     border:1px solid #df4e28;
     margin-right:3px;
+    margin-bottom: 0;
     width:45px;
     text-align: center;
 }
 
-.webtoon figcaption:hover{
+.webtoon span.title:hover, span.subtitle:hover{
     text-decoration: underline;
 }
 
