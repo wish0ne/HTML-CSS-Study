@@ -11,7 +11,7 @@ Attach only part of page.
 
 
 ## License
-[License](https://github.com/wish1030/UI-Portfolio-Component/blob/master/LICENSE)
+[License](https://github.com/wish1030/Boostcourse-UI/blob/master/Project_A-2/LICENSE)
 
 ## Contribute
 1. fork this repository
