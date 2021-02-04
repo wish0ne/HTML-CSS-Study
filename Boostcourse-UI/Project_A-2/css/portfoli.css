@@ -1,0 +1,523 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+body{
+    font-family:'나눔 고딕', 'Nanum Gothic', '돋움', Dotum, sans-serif;
+}
+
+header {
+    background-color:#000;
+    width:100%;
+    
+}
+
+header div{
+    font-size:40px;
+    font-weight:bold;
+    color:#fff;
+    width:1000px;
+    height:40px;
+    margin:0;
+    padding:40px;
+    margin:0 auto;
+
+
+}
+
+nav div {
+    width:1080px;
+    margin:0 auto;
+
+}
+
+nav .navigator{
+    display:inline-block;
+    border-style:solid;
+    border-width:1px;
+    border-color:#d1d1d1;
+    font-size:16px;
+    color:#000;
+    width:322px;
+    text-align:center;
+    padding:6.3px 0px;
+   
+   
+}
+
+nav .table{
+    margin:40px 7px 40px 40px;
+}
+
+
+nav .form{
+    margin:40px 7px;
+}
+
+nav .list{
+    margin:40px 40px 40px 7px;
+    
+}
+
+.navigator:hover{
+    font-weight: bold;
+    border-color:#454545;
+}
+
+
+section{
+    width: 1080px;
+    margin:0 auto;
+
+}
+
+section h2{
+    border-bottom: solid 1px #454545;
+    margin : 0px 40px 30px;
+    padding : 0px 0px 20px 0px; 
+    font-size:20px;
+    font-weight:bold;
+    color:#000;
+}
+
+h3{
+    font-size:16px;
+    color:#333;
+    font-weight: bold;
+    padding:12.8px 15px;
+    background-color: #f7f7f7;
+    border:solid 1px #d1d1d1;
+    width:968px;
+    margin: 0 auto;
+
+}
+
+article > .border{
+    border:solid 1px #d1d1d1;
+    padding :30px;
+    width:938px;
+    margin: 0 auto 30px;
+    border-top:none; 
+} 
+
+.table1 table, .table1 td, .table1 th{
+    border:1px solid #e4e4e4;
+    background-color: #fbfbfb;
+    font-size:12px;
+    color:#555;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+
+.table1{
+    margin:0px 0px 40px;
+}
+
+.table1 table, tr{
+    width:100%;
+    height:28px;
+}
+
+.table1 caption, .table2 caption{
+    font-size: 14px;
+    color:#000;
+    font-weight: bold;
+    text-align: left;
+    margin: 0px 0px 10px;
+
+}
+
+.table2 table{
+    background-color: #fbfbfb;
+    font-size:12px;
+    color:#555;
+    width:100%;
+    text-align:center;
+    border-collapse: collapse;
+}
+
+.table2 th{
+    border-top: 2px solid #a5a5a5;
+    border-bottom: 1px solid #e4e4e4;
+   
+}
+
+.table2 .foot{
+    border-top:1px solid #a5a5a5;
+    border-bottom:1px solid #e4e4e4;
+    font-weight: bold;
+}
+
+
+.table2 .price{
+    padding-right:70px;
+    text-align: right;
+}
+
+.table2 .content{
+    width:200px;
+}
+
+.division, th{
+    font-weight:bold;
+}
+
+.text_h4 span{
+    display:inline-block;
+    font-size:14px;
+    color:#000;
+    font-weight:bold;
+    margin-top:0px;
+    margin-bottom:10px;
+}
+
+.form_border{
+    border:1px solid #e4e4e4;
+    background-color: #fbfbfb;
+    padding :20px;
+}
+
+.form_border .text{
+    width:100%;
+    height:35px;
+    border:1px solid #e4e4e4;
+    margin-bottom:15px;
+    font-size:12px;
+    color:#000;
+    box-sizing: border-box;
+  
+}
+
+.form_border select{
+    width:295.5px;
+    height:35px;
+    border: 1px solid #e4e4e4;
+    font-size:12px;
+    color:#000;
+    margin-bottom:15px;
+}
+
+.form_border input[type="radio"]+label{
+    font-size:12px;
+    color:#000;
+    display:inline-block;
+    margin-right:60px;
+    vertical-align: text-top;
+    margin-bottom:15px;
+}
+
+
+.form_border input[placeholder="이메일 주소에 '@'를 포함해주세요."]{
+    width:100%;
+    height:35px;
+    border:1px solid #e4e4e4;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    padding: 2px 4px;
+}
+
+.form_border .cell_phone{
+    width:100%;
+    box-sizing: border-box;
+    font-size:0;
+    margin-bottom:5px;
+    height:35px;
+}
+
+.form_border .number{
+    width:25%;
+    box-sizing: border-box;
+    text-align: right; /*.code 오른쪽 정렬*/
+
+}
+
+.form_border input[placeholder="숫자만 입력해주세요."]{
+    display:inline-block;
+    border:1px solid #e4e4e4;
+    height:35px;
+    width:75%;
+    padding:2px 4px;
+    box-sizing: border-box;
+    
+}
+
+.form_border .code{
+    display: inline-block;
+    border:1px solid #08a600;
+    background-color: #4ec56d;
+    font-size:12px;
+    color:#fff;
+    height:35px;
+    width:95%;
+    cursor: pointer;
+
+}
+
+.form_border input[placeholder="인증번호를 입력해주세요."]{
+    display:block;
+    width:100%;
+    border:1px solid #e4e4e4;
+    height:35px;
+    margin-bottom:15px;
+    padding: 2px 4px;
+    box-sizing: border-box;
+}
+
+.form_border input[name="hobby"] +label{
+    font-size:12px;
+    color:#000;
+    vertical-align: text-top;
+    padding-left:3px;
+    margin-right:60px;
+}
+
+.form_border .hobby{
+    margin-bottom:15px;
+    display: inline-block;
+}
+
+.form_border textarea{
+    border:1px solid #e4e4e4;
+    box-sizing: border-box;
+}
+
+.form_border button.join{
+    background-color: #4ec53d;
+    border:1px solid #08a600;
+    font-size:16px;
+    color:#fff;
+    width:100%;
+    height:40px;
+    margin-top:10px;
+    cursor:pointer;
+}
+
+.list  h4{
+    font-size:14px;
+    color:#000;
+    font-weight: bold;
+}
+
+.project_content{
+    border:1px solid #e4e4e4;
+    width:100%;
+    padding:20px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+.project_content > h5{
+    font-size:32px;
+    font-weight: bold;
+    color:#000;
+    text-align: center;
+    margin:20px;
+
+}
+
+.project_content > strong{
+    font-size:14px;
+    font-weight: bold;
+    color:#000;
+}
+
+.project_content > span{
+    font-size:12px;
+    color:#559bfa;
+}
+
+.project_content > p{
+    font-size:12px;
+    color:#000;
+    margin-bottom:20px;
+    margin-top:6px;
+}
+
+.ranking{
+    border:1px solid #e4e4e4;
+    width:200px;
+    padding:15px;
+    margin-bottom:50px;
+}
+
+.ranking .number{
+    display:inline-block;
+    font-size:10px;
+    color:#666;
+    border:1px solid #e0e0e0;
+    width:15px;
+    height:15px;
+    text-align: center;
+    margin-right:5px;
+    margin-bottom:5px;
+
+}
+
+.ranking .text{
+    font-size:12px;
+    color:#000;
+    vertical-align: text-bottom;
+}
+
+.ranking a{
+    text-decoration: none;
+    color:#000;
+}
+
+.ranking a:hover{
+    text-decoration: underline;
+}
+
+.cookie{
+    border:1px solid #e4e4e4;
+    padding: 20px 40px;
+    margin-bottom:50px;
+}
+
+.cookie li{
+    margin-bottom:10px;
+}
+
+.cookie .strong{
+    font-size:12px;
+    font-weight: bold;
+    color:#000;
+}
+
+.cookie .strong span{
+    color:#559bfa;
+}
+
+.cookie .text{
+    font-size:12px;
+    color:#000;
+}
+
+.cookie .text>.red{
+    color:#ec5336;
+}
+
+.cookie .text>a{
+    color:#559bfa;
+
+}
+
+.cookie .text br+a{
+    display: inline-block;
+    margin-top:5px;
+}
+
+.news{
+    border:1px solid #e4e4e4;
+    margin-bottom: 50px;
+}
+
+.news ul{
+    padding: 10px 20px;
+}
+
+.news li{
+    list-style: none;
+}
+
+.news img{
+    margin-right:10px;
+    float:left;
+}
+
+.news li[class="border"]{
+    padding-bottom:15px;
+    border-bottom:1px solid #e4e4e4;
+    margin-bottom:20px;
+}
+
+.news strong{
+    font-size:14px;
+    color:#00c;
+}
+
+.news p{
+    font-size:12px;
+    color:#000;
+}
+
+.webtoon{
+    border:1px solid #e4e4e4;
+    padding:20px 1px 20px 20px;
+    font-size:0;
+}
+
+.webtoon span{
+    display: inline-block;
+    margin: 0 20px 15px 0;
+    width:285px;
+}
+
+.webtoon img{
+    margin-bottom:5px;
+}
+
+/* .webtoon span{
+    display: inline-block;
+} */
+
+.webtoon .title{
+    display:inline-block;
+    font-size:14px;
+    font-weight: bold;
+    color:#000;
+    margin-bottom: 3px;
+    width:50%;
+}
+
+.webtoon .subtitle{
+    font-size:12px;
+    color:#000;
+}
+
+.webtoon .green_box{
+    font-size:10px;
+    color:#fff;
+    background-color: #80c83d;
+    border:1px solid #71b036;
+    margin-right:3px;
+    margin-bottom: 0;
+    width:25px;
+    text-align: center;
+}
+
+.webtoon .red_box{
+    font-size:10px;
+    color:#fff;
+    background-color: #ec5336;
+    border:1px solid #df4e28;
+    margin-right:3px;
+    margin-bottom: 0;
+    width:45px;
+    text-align: center;
+}
+
+.webtoon span.title:hover, span.subtitle:hover{
+    text-decoration: underline;
+}
+
+footer{
+    display:inline-block;
+    border-top:solid 1px #d1d1d1;
+    padding:30px;
+    width:100%;
+    margin:10px 0px 0px;
+}
+
+footer .address{
+    font-size:12px;
+    color:#999;
+    text-align:center;
+
+}
+
+footer .copyright{
+    font-size:12px;
+    color:#000;
+    text-align:center;
+}
